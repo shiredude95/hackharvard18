@@ -1,0 +1,1 @@
+export GOOGLE_APPLICATION_CREDENTIALS="/home/shiredude95/HomeBox/DialogFlow/supernotes/Ramu-4ebebb462d97.json"

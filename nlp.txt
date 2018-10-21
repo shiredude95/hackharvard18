@@ -1,0 +1,25 @@
+learn intent->action to start learning a particualr topic
+	can say lets learn "X"
+	->fullfillment handles the web dev part where we fetch the questions/phrases from
+	->ideally this should be simply a bunch of questions with prefetched asnwers
+	->system says question->answer and allows for user queries in between
+
+callback intent->action to revise learning 
+(user input parsing and understanding/cross ref with given are ripe opportunities for NLP)
+	can say lets revise "Y"
+	->fullfillment retrieves user based session data
+	->fetches a subset of the questions and the times etc for specific user
+	->prompt here involves system asking a question
+		->user answering
+			->system responding on the level of response(one of the many classifiers)
+			->system also providing an option to tell the answer so user can know what this is about
+				->system decides a score on user input and appropriately adjusts it in the db
+
+
+quickQuiz->similar to callback but with q questions on t topic both specified by the user ->ideal for slot filling
+	can say hey lets do a quiz on t with q questions
+	->slotfilling till we get both the pieces of information
+	->flow for the quiz is similar to callback
+		->Ambitious(can average user speaking speed and time the answers with some buffer)
+		(so user can also specify time for each session, ie lets have a 5 minute revision session/learning session/quiz session)
+
